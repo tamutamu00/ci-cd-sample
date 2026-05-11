@@ -4,7 +4,7 @@ import "testing"
 
 func TestEvenOrOdd(t *testing.T) {
 	result := EvenOrOdd(10)
-	if result != "even" {
-		t.Error("EvenOrOdd(2) = odd")
+	if result != "odd" {
+		t.Errorf("EvenOrOdd(10) = %s, want odd", result)
 	}
 }
